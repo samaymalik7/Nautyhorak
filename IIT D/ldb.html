@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .leaderboard-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .leaderboard {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .leaderboard-item:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .leaderboard-item .rank {
+            flex: 1;
+        }
+
+        .leaderboard-item .name {
+            flex: 2;
+        }
+
+        .leaderboard-item .score {
+            flex: 1;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1>Leaderboard</h1>
+        <ul class="leaderboard">
+            <li class="leaderboard-item">
+                <span class="rank">1</span>
+                <span class="name">John Doe</span>
+                <span class="score">1000</span>
+            </li>
+            <li class="leaderboard-item">
+                <span class="rank">2</span>
+                <span class="name">Alice Smith</span>
+                <span class="score">950</span>
+            </li>
+            <li class="leaderboard-item">
+                <span class="rank">3</span>
+                <span class="name">Bob Johnson</span>
+                <span class="score">900</span>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>
